@@ -1,0 +1,24 @@
+{
+    "author": "warren",
+    "name": "NoZoom",
+    "version": "1.0",
+    "description": "Prevents browser zoom events",
+    "icons": {
+        "20": "icons/icon-20.png",
+        "40": "icons/icon-40.png"
+    },
+    "permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "js/nozoom.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
